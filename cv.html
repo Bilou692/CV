@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Bilal ASKRI</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #334155;
+            --accent-color: #3b82f6;
+            --light-gray: #f1f5f9;
+            --border-color: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #e2e8f0;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        
+        .sidebar {
+            background-color: var(--light-gray);
+            padding: 30px;
+        }
+        
+        .main {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .contact-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-icon {
+            margin-right: 10px;
+            color: var(--accent-color);
+            width: 20px;
+            text-align: center;
+        }
+        
+        .skill-group {
+            margin-bottom: 15px;
+        }
+        
+        .skill-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--secondary-color);
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .skill-tag {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+        
+        .language-item, .interest-item {
+            margin-bottom: 8px;
+        }
+        
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 25px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .item-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        
+        .item-subtitle {
+            font-style: italic;
+            color: var(--accent-color);
+        }
+        
+        .item-date {
+            color: var(--accent-color);
+        }
+        
+        .item-description {
+            margin-top: 5px;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 5px 0;
+        }
+        
+        .project-tag {
+            background-color: #e2e8f0;
+            color: var(--secondary-color);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+        
+        .profile {
+            border-left: 3px solid var(--accent-color);
+            padding-left: 15px;
+            font-style: italic;
+            margin-bottom: 25px;
+            color: var(--secondary-color);
+        }
+        
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>BILAL ASKRI</h1>
+            <h2>DÉVELOPPEUR WEB FULL-STACK</h2>
+        </header>
+        
+        <div class="content">
+            <div class="sidebar">
+                <div class="section">
+                    <h3 class="section-title">COORDONNÉES</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Lyon, France</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>askri.bilal@hotmail.fr</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>06-98-64-05-73</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🔗</span>
+                        <a href="https://www.linkedin.com/in/bilal-askri-dev-full-stack/">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💻</span>
+                        <a href="https://github.com/Bilou692">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title">COMPÉTENCES</h3>
+                    <div class="skill-group">
+                        <p class="skill-title">Langages</p>
+                        <div class="skill-list">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <p class="skill-title">Frameworks</p>
+                        <div class="skill-list">
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Laravel</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <p class="skill-title">Outils</p>
+                        <div class="skill-list">
+                            <span class="skill-tag">Git/GitHub</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">NPM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title">LANGUES</h3>
+                    <div class="language-item">
+                        <strong>Français:</strong> Courant (natif)
+                    </div>
+                    <div class="language-item">
+                        <strong>Anglais:</strong> Notions professionnelles
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title">CENTRES D'INTÉRÊT</h3>
+                    <div class="interest-item">Veille technologique</div>
+                    <div class="interest-item">Cinéma</div>
+                    <div class="interest-item">Sport</div>
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="profile">
+                    Développeur Web Full-Stack en reconversion professionnelle, avec 10 ans d'expérience dans le secteur du transport. Mon parcours m'a permis de développer un sens aigu de la rigueur, d'excellentes capacités de gestion et une aptitude avérée au travail en équipe. Passionné par les technologies web, je cherche à mettre à profit mes compétences techniques nouvellement acquises et mon expérience professionnelle antérieure pour contribuer efficacement aux projets innovants de votre entreprise.
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title">FORMATION</h3>
+                    <div class="education-item">
+                        <div class="item-header">
+                            <span class="item-title">ADA TECH SCHOOL</span>
+                            <span class="item-date">Octobre 2024 - Présent</span>
+                        </div>
+                        <div class="item-subtitle">Concepteur Développeur Full-Stack</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="item-header">
+                            <span class="item-title">Formation en Gestion Commerciale</span>
+                            <span class="item-date">2012</span>
+                        </div>
+                        <div class="item-subtitle">Montagne de Bonbon</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="item-header">
+                            <span class="item-title">Baccalauréat STG Marketing</span>
+                            <span class="item-date">2010</span>
+                        </div>
+                        <div class="item-subtitle">Lycée Juliette Récamier</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title">EXPÉRIENCE PROFESSIONNELLE</h3>
+                    <div class="experience-item">
+                        <div class="item-header">
+                            <span class="item-title">CHAUFFEUR ROUTIER ET BUS</span>
+                            <span class="item-date">2014 - 2024</span>
+                        </div>
+                        <div class="item-subtitle">TCL - Transport Confluence - TDA</div>
+                        <ul>
+                            <li>Gestion rigoureuse des plannings et itinéraires</li>
+                            <li>Coordination avec les équipes logistiques</li>
+                            <li>Garantie du respect des normes de sécurité et de qualité de service</li>
+                            <li>Gestion de la relation client et résolution de problèmes</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title">PROJETS DE DÉVELOPPEMENT</h3>
+                    <div class="project-item">
+                        <div class="item-header">
+                            <span class="item-title">MAJIN CARS</span>
+                            <span class="item-date">En cours</span>
+                        </div>
+                        <div class="item-subtitle">Projet personnel</div>
+                        <div class="project-tech">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Laravel</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                        <div class="item-description">
+                            Application web de gestion de parc automobile permettant la réservation, le suivi d'entretien et la gestion des locations.
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="item-header">
+                            <span class="item-title">EXTENSION NAVIGATEUR</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">HTML</span>
+                        </div>
+                        <div class="item-description">
+                            Développement d'une extension permettant d'améliorer l'expérience utilisateur avec des fonctionnalités de personnalisation et des outils de productivité.
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="item-header">
+                            <span class="item-title">APPLICATION DE QUIZ INTERACTIVE</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">HTML</span>
+                        </div>
+                        <div class="item-description">
+                            Plateforme de quiz dynamique et responsive incluant la création de quiz, un système de score et un classement des joueurs.
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="item-header">
+                            <span class="item-title">DATAVIZ & API</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">API</span>
+                            <span class="project-tag">HTML</span>
+                        </div>
+                        <div class="item-description">
+                            Application de visualisation dynamique de données avec graphiques interactifs et tableaux de bord personnalisables.
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="item-header">
+                            <span class="item-title">BACK OFFICE DE GESTION DE DÉCHETS</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">HTML</span>
+                        </div>
+                        <div class="item-description">
+                            Interface d'administration pour la collecte de déchets intégrant le suivi des collectes, la gestion des tournées et des fonctionnalités de reporting.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
